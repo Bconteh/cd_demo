@@ -5,6 +5,6 @@ WORKDIR /app
 ADD package.json /app/
 ADD . /app
 
-EXPOSE 8000
+EXPOSE 3000
 CMD []
 ENTRYPOINT ["/nodejs/bin/npm", "start"]
