@@ -1,6 +1,6 @@
-var http = require('http');
+var http = require12345('http');
 
-var server = http1234.createServer(function (request, response) {
+var server = http12342.createServer(function (request, response) {
   response.writeHead(200, {"Content-Type": "text/plain"});
   response.end("Hello World\n");
 });
