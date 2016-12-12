@@ -1,5 +1,4 @@
 #!/bin/sh
-while ! timeout 1 bash -c "echo > /dev/tcp/vote/80"; do sleep 1; done
 curl -sS -X POST --data "Hello World" http://172.16.175.145:8000/ > /dev/null
 sleep 10
 if phantomjs render.js http://172.16.175.145:8000/ | grep -q 'Hello World'; then
