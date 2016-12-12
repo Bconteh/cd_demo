@@ -6,8 +6,8 @@ app.get('/', function(req, res){
   res.send('Hello World');
 });
 
-var server = app.listen(8000, function(){
-  console.log('Magic is happening on port 8000');
+var server = app.listen(3000, function(){
+  console.log('Jasmine Test has started...');
 });
 
 exports.closeServer = function(){

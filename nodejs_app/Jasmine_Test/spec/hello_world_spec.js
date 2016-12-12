@@ -4,7 +4,7 @@ describe("Hello World Test", function(){
 
 var request = require("request");
 var helloWorld = require("../app.js")
-var base_url = "http://localhost:8000/"
+var base_url = "http://localhost:3000/"
 
 describe("Hello World Server", function() {
   describe("GET /", function() {
