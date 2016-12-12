@@ -6,6 +6,7 @@ RUN npm install
 ADD . /app
 
 EXPOSE 8000
-CMD []
-ENTRYPOINT ["/nodejs/bin/npm", "start"]
+
+CMD ["node", "app.js"]
+
 
