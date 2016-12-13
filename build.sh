@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ -z "${1}" ]; then
-   version="latest"
+   version="latests"
 else
    version="${1}"
 fi
