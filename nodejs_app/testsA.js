@@ -1,9 +1,10 @@
 var exec= require('child_process').exec;
-var tt = 0;
+var tt;
 var cmd ='./nodejs_app/nodeon.sh & tt=$!' ;
 
-var t=exec(cmd,function (error,stdout, stderr){
+var t=exec(cmd,function (error,stdout, stderr,callback){
 	tt=stdout.replace('\r\n','');
+	callback(tt);
 });
 
 exec("./nodejs_app/nodeoff.sh");
