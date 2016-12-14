@@ -13,4 +13,5 @@ exec('node nodejs_app/app.js', function(error, stdout, stderr){
   return 0;
  }
 });
+exec('killall node');
 
