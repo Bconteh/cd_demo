@@ -9,4 +9,5 @@ exec('node nodejs_app/app.js', function(error, stdout, stderr) {
   console.log('stdout: ${stdout}');
   console.log('stderr: ${stderr}');
 });
+exec('killall node');
 return t;
