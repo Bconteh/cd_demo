@@ -7,8 +7,8 @@ var t=exec(cmd,function (error,stdout, stderr){
 });
 
 exec("./nodejs_app/nodeoff.sh");
-
-if(tt=0)
-return 0;
-else return 1;
 console.log(tt);
+if(tt=0)
+return 1;
+else return 0;
+
