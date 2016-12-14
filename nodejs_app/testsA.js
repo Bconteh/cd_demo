@@ -16,7 +16,7 @@ var t=exec(cmd,function (error,stdout, stderr){
 		return 0;
 	}
 });
-console.log(tt);
+
 exec("killall node");
 return tt;
 
