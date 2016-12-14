@@ -7,6 +7,7 @@ var t=exec(cmd,function (error,stdout, stderr){
 });
 
 exec("./nodejs_app/nodeoff.sh");
+console.log(tt);
 if(tt=0)
 return 1;
 else return 0;
