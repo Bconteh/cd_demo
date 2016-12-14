@@ -4,8 +4,9 @@ var cmd ='./nodejs_app/nodeon.sh & tt=$!' ;
 
 var t=exec(cmd,function (error,stdout, stderr,callback){
 	tt=stdout.replace('\r\n','');
+	callback( tt );
 });
-t();
+
 exec("./nodejs_app/nodeoff.sh");
 console.log(tt);
 if(tt=0)
