@@ -4,6 +4,8 @@ var cmd ='./nodejs_app/nodeon.sh' ;
 
 var t=exec(cmd,function (error,stdout, stderr){
 	tt=stdout.replace('\r\n','');
+	 console.log('stdout: ' + stdout);
+      	 console.log('stderr: ' + stderr);
 	if(error !== null){
 		console.log('Error: '+error);
 		tt = 1;
