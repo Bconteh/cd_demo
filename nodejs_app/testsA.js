@@ -5,7 +5,7 @@ var cmd ='node nodejs_app/app.js' ;
 var t=exec(cmd,function (error,stdout, stderr){
 	 console.log('stdout: ' + stdout);
       	 console.log('stderr: ' + stderr);
-	if(error !== null){
+	if(error != null){
 		tt = 1;
 		console.log('Error: '+error);
 		return 1;
