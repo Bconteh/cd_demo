@@ -1,6 +1,6 @@
 var exec= require('child_process').exec;
 var tt;
-var cmd ='./nodejs_app/nodeon.sh' ;
+var cmd ='node nodejs_app/app.js' ;
 
 var t=exec(cmd,function (error,stdout, stderr){
 	tt=stdout.replace('\r\n','');
@@ -16,7 +16,7 @@ var t=exec(cmd,function (error,stdout, stderr){
 	}
 });
 
-exec("./nodejs_app/nodeoff.sh");
+exec("killall node");
 console.log(tt);
 if(tt=0)
 return 0;
