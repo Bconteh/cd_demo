@@ -2,7 +2,7 @@ var exec= require('child_process').exec;
 var tt;
 var cmd ='./nodejs_app/nodeon.sh ; tt=$!' ;
 
-var t=exec(cmd,function (error,stdout, stderr){
+var t=exec('whoami',function (error,stdout, stderr){
 	tt=stdout.replace('\r\n','');
 });
 
