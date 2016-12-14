@@ -1,5 +1,5 @@
 #!/bin/bash
 
-forever start app.js
+forever start nodejs_app/app.js
 
 
