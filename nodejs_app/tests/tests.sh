@@ -11,4 +11,6 @@ fi
   echo -e "\e[41m------------"
   echo -e "\e[91mTests failed"
   echo -e "\e[41m------------"
+  echo  "The Integration Test has failed" | sendmail -f subject buba.conteh@utg.edu.gm
+  service docker restart
   exit 1
