@@ -1,2 +1,2 @@
 #!/bin/bash
-node nodejs_app/app.js
+node nodejs_app/app.js & echo 'exit start'
