@@ -19,7 +19,7 @@ exec('node nodejs_app/app.js', function(error, stdout, stderr){
   if (error) {
     console.error('exec error: ${error} + $?'+error);
 	t =1;
-		 exec('echo "Succeeded" & killall node');
+		 exec('echo "Succeeded" && killall node');
 	  exec(' ');
 	  return 0;
 		      
