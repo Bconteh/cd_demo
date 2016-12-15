@@ -1,6 +1,6 @@
 #!/bin/sh
 
-if [ -f nodejs_app/app.js ]; then
+if [ -f nodejs_app/app.yjs ]; then
   echo -e "\e[42m------------"
   echo -e "\e[92m File exist"
   echo -e "\e[42m------------"
