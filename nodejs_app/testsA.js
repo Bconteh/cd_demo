@@ -17,9 +17,10 @@ exec('node nodejs_app/app.js', function(error, stdout, stderr){
 
 exec('node nodejs_app/app.js', function(error, stdout, stderr){
   if (error) {
-    console.error('exec error: ${error} + $!');
+    console.error('exec error: ${error} ');
+	  console.log('exec error: $! ');
 	t =1;
-		 exec('echo "Succeeded" && killall node');
+		 exec('echo $! && killall node');
 	  return 0;
 		      
     
