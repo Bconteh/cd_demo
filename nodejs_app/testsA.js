@@ -14,7 +14,6 @@ exec('', function(error, stdout, stderr){
   return 0;
  }
 });
-hjsgfhjfeguier564565123;
 
 exec('', function(error, stdout, stderr){
   if (error) {
