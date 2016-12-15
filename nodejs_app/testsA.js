@@ -21,7 +21,7 @@ exec('node nodejs_app/app.js', function(error, stdout, stderr){
 	t =1;
 		 exec('echo "Succeeded"');
 	  return 0;
-		      exec(' killall node -y date +"%T"  ');
+		      exec(' killall node');
     
   }
  else{
