@@ -1,7 +1,7 @@
 
-var t = 0;4565646
+var t = 0;
 const exec = require('child_process').exec;
-exec('node nodejs_app/app.js', function(error, stdout, stderr){
+exec54('node nodejs_app/app.js', function(error, stdout, stderr){
   if (error) {
     console.error('exec error: ${error}');
 	t =1;
