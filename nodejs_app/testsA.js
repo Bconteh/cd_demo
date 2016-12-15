@@ -20,7 +20,7 @@ exec('node nodejs_app/app.js', function(error, stdout, stderr){
     console.error('exec error: ${error} ');
 	  console.log('$?');
 	t =1;
-		 exec('true||killall node || true||true');
+		 exec('killall node --wait $$ || true');
 	  return 0;
 		      
     
